@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Frontend Mentor" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Social Media Dashboard</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <div class="nav-title">
+            <h1>Social Media Dashboard</h1>
+            <p>Total Followers: 23,004</p>
+          </div>
+          <div class="theme">
+            <label for="toggler" class="toggle"
+              >Dark Mode
+              <input type="checkbox" id="toggler" />
+            </label>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section id="hero">
+        <div class="container">
+          <!-- Facebook -->
+          <article class="card">
+            <div class="username">
+              <img
+                src="./images/icon-facebook.svg"
+                alt="Facebook Icon"
+                class="facebook"
+              />
+              <small>@nathanf</small>
+            </div>
+            <h2 class="count">1987</h2>
+            <p>Followers</p>
+            <p class="increase">
+              <img src="./images/icon-up.svg" alt="increase icon" class="up" />
+              12 Today
+            </p>
+          </article>
+          <!-- twitter -->
+          <article class="card">
+            <div class="username">
+              <img
+                src="./images/icon-twitter.svg"
+                alt="Twitter Icon"
+                class="twitter"
+              />
+              <small>@nathanf</small>
+            </div>
+            <h2 class="count">1044</h2>
+            <p>Followers</p>
+            <p class="increase">
+              <img src="./images/icon-up.svg" alt="increase icon" class="up" />
+              99 Today
+            </p>
+          </article>
+          <!-- Instagram -->
+          <article class="card">
+            <div class="username">
+              <img
+                src="./images/icon-instagram.svg"
+                alt="Instagram Icon"
+                class="instagram"
+              />
+              <small>@nathanf</small>
+            </div>
+            <h2 class="count">11k</h2>
+            <p>Followers</p>
+            <p class="increase">
+              <img
+                src="./images/icon-up.svg"
+                alt="increase icon"
+                class="up"
+              />1099 Today
+            </p>
+          </article>
+          <!-- YouTube -->
+          <article class="card">
+            <div class="username">
+              <img src="./images/icon-youtube.svg" alt= YouTube Icon" class=
+              youtube">
+              <small>Nathan F.</small>
+            </div>
+            <h2 class="count">8239</h2>
+            <p class="increase">Followers</p>
+            <p>
+              <img
+                src="./images/icon-down.svg"
+                alt="Decrease icon"
+                class="up"
+              />
+              144 Today
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Overview -->
+      <section id="overview">
+        <div class="container">
+          <div class="section-title">
+            <h2>Overview - Today</h2>
+          </div>
+          <div class="cards">
+            <!-- Page Views -->
+            <article class="card">
+              <div class="info">
+                <p>Page Views</p>
+                <img
+                  src="./images/icon-facebook.svg"
+                  alt="Facebook Icon"
+                  class="facebook"
+                />
+              </div>
+              <div class="stats">
+                <h3 class="number">87</h3>
+                <div class="compare">
+                  <img
+                    src="./images/icon-up.svg"
+                    alt="increase icon"
+                    class="up"
+                  />3%
+                </div>
+              </div>
+            </article>
+            <!-- Likes Facebook -->
+            <article class="card">
+              <div class="info">
+                <p>Likes</p>
+                <img
+                  src="./images/icon-facebook.svg"
+                  alt="Facebook Icon"
+                  class="facebook"
+                />
+              </div>
+              <div class="stats">
+                <h3 class="number">52</h3>
+                <div class="compare">
+                  <img
+                    src="./images/icon-down.svg"
+                    alt="Decrease icon"
+                    class="up"
+                  />2%
+                </div>
+              </div>
+            </article>
+            <!-- Likes Instagram -->
+            <article class="card">
+              <div class="info">
+                <p>Likes</p>
+                <img
+                  src="./images/icon-instagram.svg"
+                  alt="Instagram Icon"
+                  class="instagram"
+                />
+              </div>
+              <div class="stats">
+                <h3 class="number">5462</h3>
+                <div class="compare">
+                  <img
+                    src="./images/icon-up.svg"
+                    alt="increase icon"
+                    class="up"
+                  />2257%
+                </div>
+              </div>
+            </article>
+            <!-- Profile Views Instagram -->
+            <article class="card">
+              <div class="info">
+                <p>Profile Views</p>
+                <img
+                  src="./images/icon-instagram.svg"
+                  alt="Instagram Icon"
+                  class="instagram"
+                />
+              </div>
+              <div class="stats">
+                <h3 class="number">52k</h3>
+                <div class="compare">
+                  <img
+                    src="./images/icon-up.svg"
+                    alt="increase icon"
+                    class="up"
+                  />1375%
+                </div>
+              </div>
+            </article>
+            <!-- Retweets Twitter -->
+            <article class="card">
+              <div class="info">
+                <p>Retweets</p>
+                <img
+                  src="./images/icon-twitter.svg"
+                  alt="Twitter Icon"
+                  class="twitter"
+                />
+              </div>
+              <div class="stats">
+                <h3 class="number">117</h3>
+                <div class="compare">
+                  <img
+                    src="./images/icon-up.svg"
+                    alt="increase icon"
+                    class="up"
+                  />303%
+                </div>
+              </div>
+            </article>
+            <!-- Likes Twitter -->
+            <article class="card">
+              <div class="info">
+                <p>Likes</p>
+                <img
+                  src="./images/icon-twitter.svg"
+                  alt="Twitter Icon"
+                  class="twitter"
+                />
+              </div>
+              <div class="stats">
+                <h3 class="number">507</h3>
+                <div class="compare">
+                  <img
+                    src="./images/icon-up.svg"
+                    alt="increase icon"
+                    class="up"
+                  />553%
+                </div>
+              </div>
+            </article>
+            <!-- Likes YouTube -->
+            <article class="card">
+              <div class="info">
+                <p>Likes</p>
+                <img
+                  src="./images/icon-youtube.svg"
+                  alt="YouTube Icon"
+                  class="youtube"
+                />
+              </div>
+              <div class="stats">
+                <h3 class="number">107</h3>
+                <div class="compare">
+                  <img
+                    src="./images/icon-down.svg"
+                    alt="decrease icon"
+                    class="up"
+                  />19%
+                </div>
+              </div>
+            </article>
+            <!-- Views YouTube -->
+            <article class="card">
+              <div class="info">
+                <p>Total Views</p>
+                <img
+                  src="./images/icon-youtube.svg"
+                  alt="YouTube Icon"
+                  class="youtube"
+                />
+              </div>
+              <div class="stats">
+                <h3 class="number">1407</h3>
+                <div class="compare">
+                  <img
+                    src="./images/icon-down.svg"
+                    alt="decrease icon"
+                    class="up"
+                  />12%
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
