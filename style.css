@@ -7,6 +7,10 @@
   font-family: 'Inter', sans-serif;
 }
 
+body {
+  background: #ffffff;
+}
+
 .container {
   width: 1440px;
   max-width: 90%;
@@ -38,7 +42,15 @@ nav .container .nav-title {
 
 nav .container .nav-title h1 {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 700;
+}
+
+nav .container .nav-title p {
+  color: #1e202a;
+}
+
+nav .container .theme {
+  background: #aeb3cb;
 }
 
 #hero .container {
@@ -50,7 +62,16 @@ nav .container .nav-title h1 {
   margin-bottom: 3rem;
 }
 
+@media (max-width: 800px) {
+  #hero .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+}
+
 #hero .container .card {
+  border-radius: 6px;
   background: lightblue;
   height: 18rem;
   display: -webkit-box;
@@ -68,11 +89,33 @@ nav .container .nav-title h1 {
           align-items: center;
 }
 
+#hero .container .card .username {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#hero .container .card .username img {
+  width: 20px;
+  margin-right: 0.5rem;
+}
+
+#hero .container .card .username small {
+  color: #252a41;
+  font-weight: 700;
+}
+
 #hero .container .card .count {
   font-size: 3rem;
 }
 
-#hero .container .card p {
+#hero .container .card .followers {
   letter-spacing: 3px;
 }
 
@@ -88,6 +131,33 @@ nav .container .nav-title h1 {
           align-items: center;
 }
 
+#hero .container .card-facebook {
+  border-top: 4px solid #198ff5;
+}
+
+#hero .container .card-twitter {
+  border-top: 4px solid #1ca0f2;
+}
+
+#hero .container .card-instagram {
+  position: relative;
+  overflow: hidden;
+}
+
+#hero .container .card-instagram .top {
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, right top, left top, from(#df4996), to(#fdc468));
+  background: linear-gradient(to left, #df4996, #fdc468);
+}
+
+#hero .container .card-youtube {
+  border-top: 4px solid #c4032a;
+}
+
 #overview .container .section-title {
   margin-bottom: 2rem;
 }
@@ -100,6 +170,16 @@ nav .container .nav-title h1 {
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
   grid-gap: 20px;
+}
+
+@media (max-width: 800px) {
+  #overview .container .cards {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: unset;
+        grid-template-rows: unset;
+    grid-gap: 10px;
+  }
 }
 
 #overview .container .cards .card {
