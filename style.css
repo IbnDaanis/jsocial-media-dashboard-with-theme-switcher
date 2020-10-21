@@ -51,7 +51,7 @@ nav .container .nav-title h1 {
 
 nav .container .nav-title p {
   color: #63687e;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 0.9rem;
 }
 
@@ -162,8 +162,6 @@ nav .container .theme .toggle__input:checked ~ .toggle__fill::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
 }
 
 #hero .container .card:hover {
@@ -190,7 +188,7 @@ nav .container .theme .toggle__input:checked ~ .toggle__fill::after {
 
 #hero .container .card .username small {
   color: #63687e;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 #hero .container .card .count {
@@ -297,8 +295,6 @@ nav .container .theme .toggle__input:checked ~ .toggle__fill::after {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 1.4rem 1.6rem 1.4rem;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
 }
 
 #overview .container .cards .card:hover {
@@ -320,7 +316,7 @@ nav .container .theme .toggle__input:checked ~ .toggle__fill::after {
 #overview .container .cards .card .info p {
   font-size: 0.87rem;
   color: #63687e;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 #overview .container .cards .card .stats {
@@ -339,6 +335,7 @@ nav .container .theme .toggle__input:checked ~ .toggle__fill::after {
   font-size: 2rem;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  font-weight: 600;
   -webkit-transform: translateY(5px);
           transform: translateY(5px);
 }
@@ -374,5 +371,9 @@ nav .container .theme .toggle__input:checked ~ .toggle__fill::after {
 
 .card-dark {
   background: #252a41 !important;
+}
+
+.decrease {
+  color: #dc414c !important;
 }
 /*# sourceMappingURL=style.css.map */
