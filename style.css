@@ -34,6 +34,23 @@ nav .container {
   height: 136px;
 }
 
+@media (max-width: 1000px) {
+  nav .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+    height: 180px;
+    margin-bottom: 1rem;
+  }
+}
+
 nav .container .nav-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,6 +59,14 @@ nav .container .nav-title {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (max-width: 1000px) {
+  nav .container .nav-title {
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #63687e;
+  }
 }
 
 nav .container .nav-title h1 {
@@ -74,6 +99,12 @@ nav .container .theme .toggle {
   transition: all 0.3s ease-in-out;
 }
 
+@media (max-width: 1000px) {
+  nav .container .theme .toggle {
+    width: 100%;
+  }
+}
+
 nav .container .theme .toggle-dark:hover {
   color: #ffffff;
 }
@@ -87,13 +118,27 @@ nav .container .theme .toggle__fill {
   width: var(--width);
   height: var(--height);
   border-radius: var(--border-radius);
-  background: #1db489;
+  background: #8b97c6;
   -webkit-transition: background 0.2s;
   transition: background 0.2s;
   margin-left: 1rem;
 }
 
+@media (max-width: 1000px) {
+  nav .container .theme .toggle__fill {
+    margin-left: auto;
+  }
+}
+
+nav .container .theme .toggle__fill:hover {
+  background: #1db489;
+}
+
 nav .container .theme .toggle__input:checked ~ .toggle__fill {
+  background: #8b97c6;
+}
+
+nav .container .theme .toggle__input:checked ~ .toggle__fill:hover {
   background: #1db489;
 }
 
@@ -130,14 +175,14 @@ nav .container .theme .toggle__input:checked ~ .toggle__fill::after {
   display: grid;
   -ms-grid-columns: (minmax(200px, 256px))[4];
       grid-template-columns: repeat(4, minmax(200px, 256px));
-  grid-column-gap: 32px;
+  grid-column-gap: 24px;
   margin-bottom: 3rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   #hero .container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -270,7 +315,7 @@ nav .container .theme .toggle__input:checked ~ .toggle__fill::after {
           justify-content: space-between;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   #overview .container .cards {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
