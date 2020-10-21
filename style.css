@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-  width: 1440px;
+  width: 1112px;
   max-width: 90%;
   margin: 0 auto;
 }
@@ -27,7 +27,7 @@ nav .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100px;
+  height: 136px;
 }
 
 nav .container .nav-title {
@@ -41,12 +41,14 @@ nav .container .nav-title {
 }
 
 nav .container .nav-title h1 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 700;
 }
 
 nav .container .nav-title p {
-  color: #1e202a;
+  color: #63687e;
+  font-weight: 700;
+  font-size: 0.9rem;
 }
 
 nav .container .theme .toggle {
@@ -62,6 +64,8 @@ nav .container .theme .toggle {
       -ms-flex-align: center;
           align-items: center;
   font-size: 0.9rem;
+  font-weight: bold;
+  color: #63687e;
 }
 
 nav .container .theme .toggle__input {
@@ -108,24 +112,27 @@ nav .container .theme .toggle__input:checked ~ .toggle__fill::after {
 #hero .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 20px;
+  -ms-grid-columns: (minmax(200px, 256px))[4];
+      grid-template-columns: repeat(4, minmax(200px, 256px));
+  grid-column-gap: 32px;
   margin-bottom: 3rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (max-width: 800px) {
   #hero .container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    grid-gap: 10px;
+    grid-gap: 20px;
   }
 }
 
 #hero .container .card {
   border-radius: 6px;
-  background: lightblue;
-  height: 18rem;
+  background: #f0f2fa;
+  height: 216px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,6 +146,12 @@ nav .container .theme .toggle__input:checked ~ .toggle__fill::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#hero .container .card:hover {
+  background: #e1e3f1;
 }
 
 #hero .container .card .username {
@@ -151,6 +164,7 @@ nav .container .theme .toggle__input:checked ~ .toggle__fill::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 20px;
 }
 
 #hero .container .card .username img {
@@ -159,16 +173,20 @@ nav .container .theme .toggle__input:checked ~ .toggle__fill::after {
 }
 
 #hero .container .card .username small {
-  color: #252a41;
+  color: #63687e;
   font-weight: 700;
 }
 
 #hero .container .card .count {
-  font-size: 3rem;
+  font-size: 3.4rem;
 }
 
 #hero .container .card .followers {
   letter-spacing: 3px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: #63687e;
+  font-size: 0.8rem;
 }
 
 #hero .container .card .increase {
@@ -181,6 +199,13 @@ nav .container .theme .toggle__input:checked ~ .toggle__fill::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-weight: bold;
+  font-size: 0.7rem;
+  color: #1db489;
+}
+
+#hero .container .card .increase img {
+  margin-right: 4px;
 }
 
 #hero .container .card-facebook {
@@ -211,17 +236,24 @@ nav .container .theme .toggle__input:checked ~ .toggle__fill::after {
 }
 
 #overview .container .section-title {
-  margin-bottom: 2rem;
+  margin-bottom: 1.4rem;
+}
+
+#overview .container .section-title h2 {
+  color: #63687e;
 }
 
 #overview .container .cards {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (minmax(200px, 256px))[4];
+      grid-template-columns: repeat(4, minmax(200px, 256px));
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
-  grid-gap: 20px;
+  grid-gap: 24px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (max-width: 800px) {
@@ -235,8 +267,8 @@ nav .container .theme .toggle__input:checked ~ .toggle__fill::after {
 }
 
 #overview .container .cards .card {
-  background: lightblue;
-  height: 12rem;
+  background: #f0f2fa;
+  height: 124px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -244,10 +276,17 @@ nav .container .theme .toggle__input:checked ~ .toggle__fill::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border-radius: 6px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2rem;
+  padding: 1.4rem 1.6rem 1.4rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#overview .container .cards .card:hover {
+  background: #e1e3f1;
 }
 
 #overview .container .cards .card .info {
@@ -260,6 +299,12 @@ nav .container .theme .toggle__input:checked ~ .toggle__fill::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#overview .container .cards .card .info p {
+  font-size: 0.87rem;
+  color: #63687e;
+  font-weight: 700;
 }
 
 #overview .container .cards .card .stats {
@@ -276,6 +321,10 @@ nav .container .theme .toggle__input:checked ~ .toggle__fill::after {
 
 #overview .container .cards .card .stats .number {
   font-size: 2rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
 }
 
 #overview .container .cards .card .stats .compare {
@@ -285,8 +334,21 @@ nav .container .theme .toggle__input:checked ~ .toggle__fill::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.7rem;
+  color: #1db489;
+}
+
+#overview .container .cards .card .stats .compare img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 4px;
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */
