@@ -294,12 +294,24 @@ nav .container .theme .toggle__input:checked ~ .toggle__fill::after {
   border-top: 4px solid #c4032a;
 }
 
+@media (max-width: 1000px) {
+  #overview .container {
+    margin-bottom: 3rem;
+  }
+}
+
 #overview .container .section-title {
   margin-bottom: 1.4rem;
 }
 
 #overview .container .section-title h2 {
   color: #63687e;
+}
+
+@media (max-width: 1000px) {
+  #overview .container .section-title {
+    margin-bottom: 2rem;
+  }
 }
 
 #overview .container .cards {
@@ -321,7 +333,7 @@ nav .container .theme .toggle__input:checked ~ .toggle__fill::after {
         grid-template-columns: 1fr;
     -ms-grid-rows: unset;
         grid-template-rows: unset;
-    grid-gap: 10px;
+    grid-gap: 16px;
   }
 }
 
