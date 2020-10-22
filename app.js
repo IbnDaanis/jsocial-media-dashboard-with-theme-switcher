@@ -1,5 +1,6 @@
 const myToggle = document.querySelector('#myToggle')
 const toggleButton = document.querySelector('.toggle')
+const toggleFill = document.querySelector('.toggle__fill')
 const count = document.querySelectorAll('.count')
 const card = document.querySelectorAll('.card')
 const box = document.querySelector('.box')
@@ -18,6 +19,7 @@ function setDarkMode() {
   card.forEach(item => item.classList.toggle('card-dark'))
   number.forEach(item => item.classList.toggle('dark-font-white'))
   toggleButton.classList.toggle('toggle-dark')
+  toggleFill.classList.toggle('toggle__fill-dark')
   localStorage.setItem('checked', myToggle.checked)
 }
 

@@ -159,6 +159,10 @@ nav .container .theme .toggle__fill:hover {
   background: #1db489;
 }
 
+nav .container .theme .toggle__fill-dark {
+  background: #1db489 !important;
+}
+
 nav .container .theme .toggle__input:checked ~ .toggle__fill {
   background: #8b97c6;
 }

@@ -154,6 +154,10 @@ nav {
         }
       }
 
+      .toggle__fill-dark {
+        background: $lime-green !important;
+      }
+
       .toggle__input:checked~.toggle__fill {
         background: $desaturated-blue;
 
