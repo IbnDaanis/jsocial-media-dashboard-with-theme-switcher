@@ -21,6 +21,31 @@ body {
   margin: 0 auto;
 }
 
+.box {
+  width: 1440px;
+  max-width: 90%;
+  height: 250px;
+  background: #f5f7ff;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin: 0 auto;
+  border-radius: 0 0 30px 30px;
+}
+
+@media (max-width: 1000px) {
+  .box {
+    display: none;
+  }
+}
+
+.box-dark {
+  background: #1f212e !important;
+}
+
 nav .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -241,11 +266,11 @@ nav .container .theme .toggle__input:checked ~ .toggle__fill::after {
 }
 
 #hero .container .card .followers {
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   margin-bottom: 30px;
   text-transform: uppercase;
   color: #63687e;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
 }
 
 #hero .container .card .increase {

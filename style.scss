@@ -10,7 +10,7 @@ $youtube: hsl(348, 97%, 39%);
 // Dark Theme
 $toggle-dark: linear-gradient(#378fe6, #3eda82);
 $very-dark-blue: #1e202a; //  Background
-$very-dark-blue: #1f212e; // Top BG Pattern
+$very-dark-blue-box: #1f212e; // Top BG Pattern
 $dark-desaturated-blue : #252a41; // Card BG
 $desaturated-blue: #8b97c6; // Text
 $white: #ffffff; // Text
@@ -43,6 +43,28 @@ body {
   width: 1112px;
   max-width: 90%;
   margin: 0 auto;
+}
+
+.box {
+  width: 1440px;
+  max-width: 90%;
+  height: 250px;
+  background: $very-blue;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  border-radius: 0 0 30px 30px;
+
+  @media(max-width:1000px) {
+    display: none;
+  }
+}
+
+.box-dark {
+  background: $very-dark-blue-box !important;
 }
 
 nav {
@@ -215,11 +237,11 @@ nav {
       }
 
       .followers {
-        letter-spacing: 3px;
+        letter-spacing: 4px;
         margin-bottom: 30px;
         text-transform: uppercase;
         color: $dark-grayish-blue;
-        font-size: 0.8rem;
+        font-size: 0.75rem;
       }
 
       .increase {
