@@ -190,6 +190,13 @@ nav {
 }
 
 #hero {
+  h2 {
+    visibility: hidden;
+    pointer-events: none;
+    width: 0px;
+    height: 0px;
+  }
+
   .container {
     display: grid;
     grid-template-columns: repeat(4, minmax(200px, 256px));

@@ -195,6 +195,13 @@ nav .container .theme .toggle__input:checked ~ .toggle__fill::after {
           transform: translateX(var(--height)) scale(0.8);
 }
 
+#hero h2 {
+  visibility: hidden;
+  pointer-events: none;
+  width: 0px;
+  height: 0px;
+}
+
 #hero .container {
   display: -ms-grid;
   display: grid;
