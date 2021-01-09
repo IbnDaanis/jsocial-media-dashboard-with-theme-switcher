@@ -1,4 +1,4 @@
-# Insure Landing Page
+# Social Media Dashboard with Theme Switcher
 
 [Link to my solution](https://ibndaanis.github.io/social-media-dashboard/)
 
